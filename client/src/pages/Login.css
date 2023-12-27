@@ -1,0 +1,11 @@
+.login-page{
+    width: 100%;
+    height: calc(100vh - 5.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-page form{
+    min-height: 5rem;
+}

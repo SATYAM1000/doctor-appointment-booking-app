@@ -1,0 +1,270 @@
+/** @format */
+
+.calendar-component {
+	width: 100%;
+	min-height: 100%;
+	padding: 0.5rem;
+	background: #fff;
+  overflow: hidden;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.react-calendar {
+	width: 100%;
+	max-width: 100%;
+	border-radius: 15px;
+	line-height: 0rem;
+	background: transparent;
+	padding: 0.5rem;
+}
+
+.react-calendar {
+    width: 450px;
+    max-width: 100%;
+    background: white;
+    border-radius: 15px;
+  }
+  .react-calendar--doubleView {
+    width: 700px;
+  }
+  .react-calendar--doubleView .react-calendar__viewContainer {
+    display: flex;
+    margin: -0.5em;
+  }
+  .react-calendar--doubleView .react-calendar__viewContainer > * {
+    width: 50%;
+    margin: 0.5em;
+  }
+  .react-calendar,
+  .react-calendar *,
+  .react-calendar *:before,
+  .react-calendar *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  /* Custom Navigation Styles */
+  @media screen and (max-width: 500px) {
+    .react-calendar__navigation__prev2-button,
+    .react-calendar__navigation__prev-button {
+      display: none;
+    }
+    .react-calendar__navigation__label {
+      padding-left: 1rem;
+      text-align: left;
+    }
+  }
+  
+  .react-calendar button {
+    margin: 0;
+    border: 0;
+    outline: none;
+  }
+  .react-calendar button:enabled:hover {
+    cursor: pointer;
+  }
+  .react-calendar__navigation {
+    display: flex;
+    height: 44px;
+    margin-bottom: 1em;
+  }
+  .react-calendar__navigation button {
+    min-width: 44px;
+    background: none;
+  }
+  .react-calendar__navigation button:disabled {
+    visibility: hidden;
+    background-color: #f0f0f0;
+  }
+  .react-calendar__navigation button:enabled:hover,
+  .react-calendar__navigation button:enabled:focus {
+    background-color: #e6e6e6;
+  }
+  .react-calendar__month-view__weekdays {
+    color: #4f46e5;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8em;
+  }
+  /* Each day should be round when hovered */
+  .react-calendar__month-view__days__day {
+    padding: 5px;
+    background-clip: content-box !important;
+    border-radius: 15px !important;
+  }
+  
+  .react-calendar__navigation__label__labelText {
+    font-weight: 500;
+    font-size: 1.05em;
+  }
+  .react-calendar__navigation__label {
+    pointer-events: none;
+  }
+  
+  .react-calendar__navigation__arrow {
+    background-color: #fff;
+    padding: 7px;
+    background-clip: content-box !important;
+    border-radius: 50px;
+    font-size: 1.25em;
+  }
+  .react-calendar__navigation__arrow:hover {
+    background-color: rgb(107 114 128);
+  }
+  
+  /* If you do not wish to show weekends
+  
+  /* 
+  .react-calendar__month-view__days > .react-calendar__tile,
+  .react-calendar__month-view__weekdays__weekday {
+    flex-basis: 20% !important;
+    max-width: 20% !important;
+  } 
+  
+  .react-calendar__month-view__weekdays__weekday:nth-child(6),
+  .react-calendar__month-view__weekdays__weekday:nth-child(7) {
+    display: none !important;
+  } 
+  
+  .react-calendar__month-view__days__day--weekend {
+    display: none !important;
+  }  */
+  */
+  
+  .react-calendar__month-view__weekdays__weekday {
+    padding: 0.75em;
+  }
+  .react-calendar__month-view__weekdays__weekday abbr {
+    text-decoration: none;
+  }
+  .react-calendar__month-view__weekNumbers .react-calendar__tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75em;
+    font-weight: bold;
+  }
+  .react-calendar__month-view__days__day--neighboringMonth {
+    color: #b3b3b3;
+  }
+  .react-calendar__year-view .react-calendar__tile,
+  .react-calendar__decade-view .react-calendar__tile,
+  .react-calendar__century-view .react-calendar__tile {
+    padding: 2em 0.5em;
+  }
+  .react-calendar__tile {
+    aspect-ratio: 1/1;
+    max-width: 100%;
+    background: none;
+    text-align: center;
+  }
+  .react-calendar__tile:disabled {
+    background-color: #f0f0f0;
+    color: rgb(107 114 128);
+  }
+  .react-calendar__tile:enabled:hover,
+  .react-calendar__tile:enabled:focus {
+    background-color: rgb(238 242 255);
+  }
+  .react-calendar__tile--now {
+    border-radius: 15px;
+    border: 2px solid #4f46e5 !important;
+    color: #4f46e5;
+  }
+  .react-calendar__tile--now:enabled:hover,
+  .react-calendar__tile--now:enabled:focus {
+    background-color: rgb(238 242 255);
+  }
+  .react-calendar__tile--hasActive {
+    background: #76baff;
+  }
+  .react-calendar__tile--hasActive:enabled:hover,
+  .react-calendar__tile--hasActive:enabled:focus {
+    background: #a9d4ff;
+  }
+  .react-calendar__tile--active:enabled:hover,
+  .react-calendar__tile--active:enabled:focus {
+    background: #4f46e5;
+    color: white;
+  }
+  .react-calendar--selectRange .react-calendar__tile--hover {
+    background-color: rgb(238 242 255);
+  }
+
+.time-component {
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	gap: 1rem;
+	overflow: hidden;
+	flex-wrap: wrap;
+	background: transparent;
+	padding: 0.5rem 0.8rem;
+	align-items: center;
+	justify-content: flex-start;
+}
+.time-slot {
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 3rem;
+	min-width: 3rem;
+	overflow: hidden;
+	box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    
+}
+
+.time-slot button {
+	border: none;
+	outline: none;
+	padding: 0.5rem;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	color: #05B20D;
+	border-radius: 5px;
+	transition: 0.6s;
+	cursor: pointer;
+    border: 0.1rem solid #05B20D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+
+.time-slot button:hover {
+	background: #05B20D;
+    color: #fff;
+}
+
+.time-slot button:focus{
+  background: #05B20D;
+  color: #fff;
+}
+
+.extra-btns{
+  height: auto;
+  padding: 1.5rem 1rem;
+  width: 100%;
+  background:none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.book-slot-btn{
+  width: auto;
+  height: auto;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #4f46e5;
+  border-radius: 5px;
+  margin:0;
+  cursor: pointer;
+}

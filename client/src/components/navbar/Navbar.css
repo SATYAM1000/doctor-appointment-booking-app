@@ -1,0 +1,254 @@
+/** @format */
+
+.navbar-component {
+	width: 100%;
+	height: 5.5rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	overflow: hidden;
+	padding: 0rem 5rem;
+	top: 0;
+}
+
+@media (max-width: 676px) {
+	.navbar-component {
+		padding: 0rem 1.5rem;
+	}
+}
+
+.logo-and-bars {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+@media (max-width: 676px) {
+	.logo-and-bars {
+		gap: 2rem;
+	}
+
+	.logo {
+		font-size: 1.8rem;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+.sidebar-menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.bars {
+	font-size: 1.5rem;
+	font-weight: 700;
+	cursor: pointer;
+	color: #458efd;
+}
+
+.hide-menu-options {
+	display: none;
+}
+
+.logo {
+	color: #458efd;
+	letter-spacing: 0.5px;
+}
+
+.menu-options {
+	width: auto;
+	height: calc(100vh - 5.5rem);
+	position: fixed;
+	top: 5.5rem;
+	left: 0rem;
+	z-index: 999;
+	background: #faf4ed;
+	padding: 1rem 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.upper-menu,
+.lower-menu {
+	display: flex;
+	flex-direction: column;
+	background: transparent;
+	gap: 0.8rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	padding-bottom: 1rem;
+}
+
+.menu-item {
+	background: transparent;
+	min-width: 13rem;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+
+.anchor {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 1rem;
+	background: #458efd;
+	width: 100%;
+	height: 100%;
+	padding: 0.6rem 1rem;
+	color: #fff;
+	letter-spacing: 0.5px;
+	font-weight: 500;
+}
+
+.simple-anchor {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 1rem;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	padding: 0.6rem 1rem;
+	color: #458efd;
+	letter-spacing: 0.5px;
+	font-weight: 500;
+}
+
+.menu-item a i {
+	background: transparent;
+	width: 1.2rem;
+	height: 1.2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu-item a p {
+	background: transparent;
+}
+
+.simple-anchor:hover {
+	background: #cfe2ff;
+	color: #458efd;
+	/* color: #fff; */
+}
+
+.search-notification-profile {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 3.5rem;
+}
+
+.search-bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0rem;
+	background: #fff;
+	border-radius: 0.5rem;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.magnifying-glass {
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+	background: #fff;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	color: #458efd;
+}
+.search-bar input {
+	padding: 0.5rem 0rem 0.5rem 0.5rem;
+	background: transparent;
+	border: none;
+	outline: none;
+}
+
+.search-bar input::placeholder {
+	letter-spacing: 0.5px;
+	font-size: 15px;
+}
+
+@media (max-width: 676px) {
+	.search-bar input {
+		display: none;
+	}
+}
+
+.profile-notification {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.2rem;
+}
+
+@media (max-width: 676px) {
+	.profile-notification {
+		display: none;
+	}
+}
+
+.notification-icon {
+	font-size: 18px;
+	padding: 0.5rem;
+	background: #fff;
+	border-radius: 0.5rem;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	color: #458efd;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.notification-icon:hover {
+	background: #458efd;
+	color: #fff;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.notfication-count-and-icon {
+	display: flex;
+	background: transparent;
+	position: relative;
+}
+
+.count-icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: red;
+	width: 1.1rem;
+	height: 1.1rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.4rem;
+	color: #fff;
+}
+
+.count-icon p {
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff;
+}
+
+.search-notification-profile img {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	border: 2px solid #458efd;
+}

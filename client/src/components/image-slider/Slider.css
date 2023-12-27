@@ -1,0 +1,93 @@
+
+ 
+/* .image-slider {
+	position: relative;
+	min-width: 100%;
+	max-width: 600px; 
+	margin: 0 auto;
+	text-align: center;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	border-radius: 1.5rem;
+	overflow: hidden;
+	position: relative;
+}   */
+
+/* .slider-image {
+	width: 100%;
+	height: auto;
+	border: 1px solid #ccc;
+	transition: transform 0.5s ease;
+	border-radius: 1.5rem;
+	overflow: hidden;
+	transition: transform 300ms ease-in-out;
+} */
+
+/* .slider-image.active {
+	transform: translateX(-100%);
+} */
+
+/* .prev-btn,
+.next-btn {
+	position: absolute;
+	padding: 1rem;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	font-size: 2rem;
+	background: transparent;
+	color: gray;
+	cursor: pointer;
+}
+
+.next-btn {
+	right: 0;
+} */
+
+
+/* Image Slider CSS */
+.image-slider {
+    
+    max-width: 100%;
+	min-width: 100%;
+	display: flex;
+	align-items: center;
+	border-radius: 1.5rem;
+	overflow: hidden;
+	position: relative;
+    min-height: 10rem;
+    border-radius: 2rem;
+    background: transparent;
+  }
+  
+  .slider-image {
+    position: absolute;
+    border-radius: 2rem;
+    width: 100%;
+    height: auto;
+    opacity: 0; 
+    transition: opacity 1s ease; /* Adjust the transition duration and easing */
+  }
+  
+  .slider-image.active {
+    width: 100%;
+    opacity: 1;    
+  }
+  
+  .prev-btn,
+  .next-btn {
+      position: absolute;
+      padding: 1rem;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      font-size: 2rem;
+      background: transparent;
+      color: gray;
+      cursor: pointer;
+  }
+ 
+  .next-btn{
+    right: 0;
+  }

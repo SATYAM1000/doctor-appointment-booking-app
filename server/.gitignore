@@ -1,0 +1,28 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Environment variables
+.env
+
+# Dependency lock files
+package-lock.json
+yarn.lock
+
+# MongoDB data directory
+/data/db
+
+# IDE files
+.vscode/
+.idea/
+
+# Build output (if applicable)
+/build
+/dist
+
+# Miscellaneous
+.DS_Store
+Thumbs.db

@@ -1,0 +1,17 @@
+/** @format */
+
+.favourite-page {
+	width: 100%;
+	min-height: calc(100vh - 5.5rem);
+	background: transparent;
+	display: flex;
+	padding: 0rem 4rem;
+	background: transparent;
+	overflow: hidden;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.fav-doc{
+    flex-wrap: wrap;
+}

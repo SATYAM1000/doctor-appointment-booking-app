@@ -1,0 +1,124 @@
+/** @format */
+
+.doctor-card-container {
+	background: #fff;
+	min-width: 12rem;
+	min-height: 15rem;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	cursor: default;
+}
+.doctor-card {
+	background: #fff;
+	min-width: 100%;
+	min-height: 100%;
+	/* min-width: 12rem;
+	min-height: 15rem; */
+	border-radius: 0.5rem;
+	overflow: hidden;
+	/* box-shadow: 0 0 10px rgba(0,0,0,0.3); */
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.7rem 0.5rem;
+}
+
+/* .doctor-card:hover {
+	transform: scale(1.1);
+} */
+
+.doctor-card img {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	margin: 0 auto;
+}
+
+.image-and-name {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.doctor-name {
+	font-size: 13px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	text-transform: capitalize;
+}
+
+.name-and-specializaation {
+	text-align: center;
+}
+
+.specialization {
+	color: rgb(177, 177, 177);
+	font-size: 11px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+}
+.ratings {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 0.5rem;
+	font-size: 12px;
+	gap: 0.1rem;
+	color: #458efd;
+}
+
+.extra-doctor-details {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 0rem auto;
+	gap: 0.3rem;
+}
+
+.extra-doctor-details p {
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.extra-doctor-details button {
+	border: none;
+	outline: none;
+	padding: 0.5rem 0.8rem;
+	letter-spacing: 0.5px;
+	background: rgb(139, 168, 250);
+	color: #fff;
+	border-radius: 0.3rem;
+	cursor: pointer;
+	font-size: 11px;
+}
+
+.favourite-icon{
+	position: absolute;
+	right: 0;
+	padding: 0.5rem;
+	background: transparent;
+}
+
+.favourite-icon i{
+
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.favourite-icon i:hover{
+	color: red;
+}
+
+.fav{
+	color: red;
+}

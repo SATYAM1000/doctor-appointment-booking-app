@@ -1,0 +1,142 @@
+/** @format */
+
+.apply-doctor-page {
+	width: 100%;
+	height: calc(100vh - 5.5rem);
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.personal-details{
+	background: transparent;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	padding: 1.5rem 0.7rem;ś
+	border-radius: 0.5rem;
+	overflow: hidden;
+	background: transparent;
+
+}
+
+@media(max-width:676px){
+	.personal-details{
+		gap: 2.5rem;
+	}
+	
+}
+
+
+.personal-details h3{
+	font-size: 1.5rem;
+}
+
+.personal-details form{
+	width: 40%;
+	height: auto;
+	border-radius:0.5rem;
+	background: transparent;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	gap: 0.5rem;
+	padding: 1rem 0.7rem;
+	border: 1px solid rgba(0,0,0,0.3);
+}
+
+@media (max-width: 1024px) and (min-width: 677px) {
+    .personal-details form{
+		width: 70%;
+	}
+}
+
+
+@media(max-width:676px){
+
+	.personal-details form{
+		width: 70%;
+		
+	}
+	
+}
+
+
+.personal-details form input{
+	width: 100%;
+	height: 2.5rem;
+	border: 1px solid rgba(0,0,0,0.3);
+}
+
+.personal-details form input::placeholder{
+	color: #949494;
+}
+
+.personal-details form label{
+	font-size: 13px;
+	letter-spacing: 0.5px;
+	color: #949494;
+
+}
+
+.imp::placeholder{
+	font-size: 10px;
+}
+
+.profile-image-upload{
+	width: 15rem;
+	height: 15rem;
+	border-radius: 50%;
+	position: relative;
+	background: #000;
+	overflow: hidden;
+	border: 2px solid #207ed1;
+}
+
+.profile-image-upload img{
+	height: 100%;
+	background: gray;
+	cursor: pointer;
+	/* border: 2px solid #207ed1; */
+	background-position: center;
+	background-repeat: no-repeat;
+
+
+}
+
+
+
+.profile-image-upload input[type='file'] {
+	display: none;
+  }
+
+  #image-label{
+	position: absolute;
+	bottom: 11%;
+	right: 15%;
+	width: 2rem;
+	height: 2rem;
+	background: #fff;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	/* box-shadow: 0px 1px 7px rgba(105, 110, 232, 0.54); */
+	border-radius: 50%;
+	/* user-select: none; */
+	cursor: pointer;
+	color: #207ed1;
+	transition: all 1s;
+	border: 2px solid #207ed1;
+ }
+ #image-label:hover{
+	color: #18ac1c;
+ }
